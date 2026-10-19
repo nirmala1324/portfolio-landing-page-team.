@@ -1,0 +1,11 @@
+# Nama Brand
+
+> Satu kalimat jelas tentang apa yang brand ini lakukan dan untuk siapa.
+
+## Halaman Utama
+- [Layanan](https://domainkamu.com/layanan): Berisikan info detail layanan yang diberikan team.
+- [Harga](https://domainkamu.com/harga): Berisikan list paket dan harga yang ditawarkan
+- [FAQ](https://domainkamu.com/faq): Berisikan pertanyaan umum
+
+## Kontak
+- Email: info@teamapp.com
