@@ -12,11 +12,16 @@ export function Reveal({children}: {children: React.ReactNode}) {
     const ref = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        gsap.from(ref.current, {
-            y: 60, opacity: 0, duration: 1, ease: "power3.out",
-            scrollTrigger: { trigger: ref.current, start: "top 65%", markers: true },
-        });
-    }, { scope: ref });
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ref.current,
+                start: 'top 65%',
+                markers: true,
+                toggleActions: "play reverse play reverse"
+            }
+        })
+            .from(ref.current, {y: 100, opacity: 0, duration: 1, ease: 'power3.out'})
+    }, {scope: ref})
 
     return <div ref={ref}>{children}</div>
 }

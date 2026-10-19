@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./global.css"
 import {siteConfig} from "@/lib/seo";
+import {SmoothScroll} from "@/components/SmoothScroll";
 
 const lexendDeca = Lexend_Deca({
     variable: "--font-lexend-deca",
@@ -53,7 +54,9 @@ export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html lang="en" className={`${lexendDeca.variable}`}>
             <body>
-                {children}
+                <SmoothScroll>
+                    {children}
+                </SmoothScroll>
                 <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/>
             </body>
         </html>
