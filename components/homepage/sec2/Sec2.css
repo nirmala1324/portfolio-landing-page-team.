@@ -1,0 +1,77 @@
+.sec2-container {
+  .content-pc {
+    width: 100vw;
+    height: min(82.001vh, 45.556vw);
+    margin-top: min(10.001vh, 5.556vw);
+    background-image: url("../sec2/assets/Mockup-Section.png");
+    background-position: center;
+    background-size: contain;
+    .center-container {
+      height: 100%;
+      display: flex;
+      justify-content: start;
+      gap: min(7vh, 3.889vw);
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: min(19.98vh, 11.1vw);
+        max-width: min(57.6vh, 32vw);
+        .desc-dark {
+          max-width: min(57.6vh, 32vw);
+          margin-block: min(3.06vh, 1.7vw) min(6.84vh, 3.8vw);
+        }
+        .action-container {
+          display: flex;
+          align-items: center;
+          gap: min(1.71vh, 0.95vw);
+          .text {
+            color: #5468E7;
+            line-height: 1;
+            letter-spacing: 0;
+            text-decoration: underline;
+            font-size: min(2vh, 1.111vw);
+          }
+          .arrow-right {
+            width: min(2.466vh, 1.37vw);
+            height: min(1.03vh, 0.572vw);
+          }
+        }
+      }
+      .items-container {
+        height: 100%;
+        width: min(131.337vh, 72.965vw);
+        position: relative;
+        .item {
+          position: absolute;
+        }
+        .item-1 {
+          width: min(23.875vh, 13.264vw);
+          height: min(42.25vh, 23.472vw);
+          top: min(0.5vh, 0.278vw);
+          left: min(-0.25vh, -0.139vw);
+        }
+        .item-2 {
+          height: 100%;
+          width: min(84.625vh, 47.014vw);
+          top: 0;
+          left: min(13.32vh, 7.4vw);
+          z-index: 2;
+        }
+        .item-3 {
+          width: min(42.75vh, 23.75vw);
+          height: min(29.624vh, 16.458vw);
+          bottom: min(13.75vh, 7.639vw);
+          left: min(-3.001vh, -1.667vw);
+          z-index: 3;
+        }
+        .item-4 {
+          width: min(5.501vh, 3.056vw);
+          height: min(5.501vh, 3.056vw);
+          bottom: min(39.499vh, 21.944vw);
+          left: min(33.5vh, 18.611vw);
+          z-index: 4;
+        }
+      }
+    }
+  }
+}
